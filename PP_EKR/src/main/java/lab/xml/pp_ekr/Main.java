@@ -10,9 +10,11 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("caesarView.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 400, 450);
         stage.setTitle("Шифратор Цезаря");
+        stage.setMinHeight(450);
+        stage.setMinWidth(400);
         stage.setScene(scene);
         stage.show();
     }
