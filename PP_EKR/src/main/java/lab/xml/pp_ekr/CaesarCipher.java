@@ -3,7 +3,7 @@ package lab.xml.pp_ekr;
 public class CaesarCipher {
 
     public String encrypt(String text, int shift) {
-        if (text == null) {
+        if (text == null || text.isEmpty()) {
             return "";
         }
         StringBuilder result = new StringBuilder();
